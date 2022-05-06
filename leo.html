@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let answer = parseInt(prompt('kindly input a number between 1-20', ))
+
+       console.log('lets play fizzbuzz')
+
+       function checkAnswer (answer) {
+         return (answer<=20)||alert('cant proceed, reload page and try again')
+       }
+
+       let greeting = (answer<=20)?
+       ()=> alert('check the result in the console'):
+       ()=> alert('follow the next instruction');
+
+       greeting()
+
+
+       if (checkAnswer(answer)) {
+         for (let i=1; i<=answer; i++){
+           if (i%3===0 &&i%5===0){
+             console.log ('fizzbuzz');
+           } else if (i%3===0) {
+             console.log('fizz');
+           } else if (i%5===0){
+             console.log ('buzz');
+           }else{
+             console.log(i)
+           }
+         }
+
+       }
+
+    </script>
+</body>
+</html>
